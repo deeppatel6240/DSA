@@ -134,6 +134,35 @@ public class DeletionLinkedList {
         return head;
     }
 
+    /* Delete a Node at give data in the list. */
+    public Node deleteAtGivenKey(Node head, int data) {
+
+        // if head is null then our linked list is empty
+        if (head == null)
+            return null;
+
+        // Maintaining 2 pointer to delete node before given node.
+        Node pointer = head;
+        Node temp = head.next;
+
+        // conditioning to ensure if you want to remove head node.
+        if (pointer.data != data) {
+            // loop until next of temp is not null and data of temp is not equal to data.
+            while (temp.next != null && temp.data != data) {
+                pointer = pointer.next;
+                temp = temp.next;
+            }
+        } else
+            // if we are trying to remove head then make head as next of head
+            head = head.next;
+
+        // if data of next of pointer equals to data then remove assign next of pointer as next of temp to remove node.
+        if (pointer.next.data == data)
+            pointer.next = temp.next;
+
+        return head;
+    }
+
     public void traverseLinkedList(Node head) {
         Node pointer = head;
 
@@ -174,6 +203,7 @@ public class DeletionLinkedList {
 //        head = llist.deleteAtEnd(head);
 //        head = llist.deleteAfter(head, head.next.next.next);
 //        head = llist.deleteBefore(head, head.next.next.next.next.next);
+        head = llist.deleteAtGivenKey(head, 2);
 
         System.out.println("Created Linked list is: ");
         llist.traverseLinkedList(head);
