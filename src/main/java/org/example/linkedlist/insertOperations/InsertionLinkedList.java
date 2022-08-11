@@ -113,7 +113,7 @@ public class InsertionLinkedList {
         Node newNode = new Node(data);
 
         Node pointer = head;
-        while (pointer.next != null) {
+        while (pointer != givenNode) {
             if (pointer.next.data == givenNode.data) {
                 newNode.next = pointer.next;
                 pointer.next = newNode;
@@ -166,7 +166,7 @@ public class InsertionLinkedList {
         // 1->7->8->6>21->4->NULL
         llist.insertAtIndex(21, 5); // can not insert into 0 index
 
-        llist.insertBefore(llist.head.next.next.next.next.next.next, 98);
+        llist.insertBefore(llist.head.next.next.next.next.next, 98);
 
         System.out.println("Created Linked list is: ");
         llist.traverseLinkedList(llist.head);
