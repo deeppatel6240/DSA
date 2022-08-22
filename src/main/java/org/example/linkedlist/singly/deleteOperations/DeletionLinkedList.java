@@ -1,4 +1,4 @@
-package org.example.linkedlist.deleteOperations;
+package org.example.linkedlist.singly.deleteOperations;
 
 // A complete working Java program to demonstrate all deletion methods on linked list
 

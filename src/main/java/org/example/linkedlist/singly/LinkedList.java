@@ -1,4 +1,4 @@
-package org.example.linkedlist;
+package org.example.linkedlist.singly;
 
 // A Linked List Node
 class Node {

@@ -1,4 +1,4 @@
-package org.example.linkedlist.insertOperations;
+package org.example.linkedlist.singly.insertOperations;
 
 // A complete working Java program to demonstrate all insertion methods on linked list
 
