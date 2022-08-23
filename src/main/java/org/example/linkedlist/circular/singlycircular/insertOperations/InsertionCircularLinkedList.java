@@ -1,4 +1,4 @@
-package org.example.linkedlist.circular.insertOperations;
+package org.example.linkedlist.circular.singlycircular.insertOperations;
 
 class Node {
     int data;

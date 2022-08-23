@@ -16,7 +16,7 @@ public class DoublyLinkedList {
 
     /* This function prints contents of linked list starting from
         the given node */
-    public void traverseLinkedListInForward(Node head) {
+    public void traverseDoublyLinkedListInForward(Node head) {
         Node pointer = head;
 
         System.out.println("Traversal in forward Direction");
@@ -29,7 +29,7 @@ public class DoublyLinkedList {
 
     /* This function prints contents of linked list starting from
         the given node */
-    public void traverseLinkedListInBackward(Node tail) {
+    public void traverseDoublyLinkedListInBackward(Node tail) {
         Node pointer = tail;
 
         System.out.println("Traversal in reverse direction");
@@ -70,7 +70,7 @@ public class DoublyLinkedList {
         fifth.next = null;
         fifth.prev = fourth;
 
-//        doublyLinkedList.traverseLinkedListInForward(doublyLinkedList.head);
-        doublyLinkedList.traverseLinkedListInBackward(doublyLinkedList.head.next.next.next.next);
+//        doublyLinkedList.traverseDoublyLinkedListInForward(doublyLinkedList.head);
+        doublyLinkedList.traverseDoublyLinkedListInBackward(doublyLinkedList.head.next.next.next.next);
     }
 }

@@ -1,4 +1,4 @@
-package org.example.linkedlist.circular;
+package org.example.linkedlist.circular.singlycircular;
 
 class Node {
     int data;
@@ -12,7 +12,7 @@ class Node {
 public class CircularLinkedList {
     Node head;
 
-    public void traverseLinkedList(Node head) {
+    public void traverseCircularLinkedList(Node head) {
         Node pointer = head;
 
         // printing node-data
@@ -38,6 +38,6 @@ public class CircularLinkedList {
         fourth.next = fifth;
         fifth.next = circularLinkedList.head;
 
-        circularLinkedList.traverseLinkedList(circularLinkedList.head);
+        circularLinkedList.traverseCircularLinkedList(circularLinkedList.head);
     }
 }

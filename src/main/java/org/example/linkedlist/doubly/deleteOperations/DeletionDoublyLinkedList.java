@@ -125,7 +125,7 @@ public class DeletionDoublyLinkedList {
 
     /* This function prints contents of linked list starting from
        the given node */
-    public void traverseLinkedListInForward(Node head) {
+    public void traverseDoublyLinkedListInForward(Node head) {
         Node pointer = head;
 
         System.out.println("Traversal in forward Direction");
@@ -138,7 +138,7 @@ public class DeletionDoublyLinkedList {
 
     /* This function prints contents of linked list starting from
         the given node */
-    public void traverseLinkedListInBackward(Node tail) {
+    public void traverseDoublyLinkedListInBackward(Node tail) {
         Node pointer = tail;
 
         System.out.println("Traversal in reverse direction");
@@ -188,6 +188,6 @@ public class DeletionDoublyLinkedList {
         head = deletion.deleteAtGivenKey(head, 11);
 
         System.out.println("Created Linked list is: ");
-        deletion.traverseLinkedListInForward(head);
+        deletion.traverseDoublyLinkedListInForward(head);
     }
 }

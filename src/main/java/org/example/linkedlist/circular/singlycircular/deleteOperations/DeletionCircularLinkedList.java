@@ -1,4 +1,4 @@
-package org.example.linkedlist.circular.deleteOperations;
+package org.example.linkedlist.circular.singlycircular.deleteOperations;
 
 class Node {
     int data;

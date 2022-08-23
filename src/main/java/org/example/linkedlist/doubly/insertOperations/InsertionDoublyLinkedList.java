@@ -118,7 +118,7 @@ public class InsertionDoublyLinkedList {
 
     /* This function prints contents of linked list starting from
        the given node */
-    public void traverseLinkedListInForward(Node head) {
+    public void traverseDoublyLinkedListInForward(Node head) {
         Node pointer = head;
 
         System.out.println("Traversal in forward Direction");
@@ -131,7 +131,7 @@ public class InsertionDoublyLinkedList {
 
     /* This function prints contents of linked list starting from
         the given node */
-    public void traverseLinkedListInBackward(Node tail) {
+    public void traverseDoublyLinkedListInBackward(Node tail) {
         Node pointer = tail;
 
         System.out.println("Traversal in reverse direction");
@@ -156,6 +156,6 @@ public class InsertionDoublyLinkedList {
         insertion.insertBefore(44, insertion.head.next.next.prev); // not design for 0th element insertion
 
         System.out.println("Created Linked list is: ");
-        insertion.traverseLinkedListInForward(insertion.head);
+        insertion.traverseDoublyLinkedListInForward(insertion.head);
     }
 }
