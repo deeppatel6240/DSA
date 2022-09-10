@@ -61,6 +61,9 @@ public class InsertionCircularDoublyLinkedList {
         InsertionCircularDoublyLinkedList insertion = new InsertionCircularDoublyLinkedList();
 
         insertion.insertAtBegin(8);
+        insertion.insertAtBegin(9);
+        insertion.insertAtBegin(11);
+        insertion.insertAtBegin(2);
 
         System.out.println("Created Linked list is: ");
         insertion.traverseDoublyCircularLinkedList(insertion.head);
